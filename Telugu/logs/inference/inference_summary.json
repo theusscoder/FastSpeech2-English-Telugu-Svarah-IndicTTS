@@ -1,0 +1,57 @@
+[
+  {
+    "id": "T1",
+    "text": "\u0c28\u0c4d\u0c2f\u0c42\u0c30\u0c4b\u0c2b\u0c3e\u0c30\u0c4d\u0c2e\u0c15\u0c4b\u0c32\u0c3e\u0c1c\u0c3f\u0c15\u0c32\u0c4d \u0c2a\u0c30\u0c3f\u0c36\u0c4b\u0c27\u0c28\u0c32\u0c4b \u0c28\u0c42\u0c24\u0c28 \u0c14\u0c37\u0c27\u0c3e\u0c32 \u0c2a\u0c4d\u0c30\u0c2d\u0c3e\u0c35\u0c3e\u0c28\u0c4d\u0c28\u0c3f \u0c35\u0c3f\u0c36\u0c4d\u0c32\u0c47\u0c37\u0c3f\u0c02\u0c1a\u0c3e\u0c30\u0c41.",
+    "speaker": "Female",
+    "pitch_range": 1.0,
+    "checkpoint_step": 25000,
+    "seconds": 5.108,
+    "wav": "Results/Telugu/test_generated_audios/T1_Female.wav",
+    "phones": "n y uu r oo ph aa r m a k oo l aa j i k a l p a r i sh oo dh a n a l oo n uu t a n a au sR a dh aa l a p r a bh aa v aa n n i v i sh l ee sR i ny c aa r u",
+    "words_needing_review": []
+  },
+  {
+    "id": "T2a",
+    "text": "\u0c24\u0c3e\u0c21\u0c41\u0c2a\u0c48 \u0c05\u0c24\u0c28\u0c3f \u0c2a\u0c1f\u0c4d\u0c1f\u0c41 \u0c1a\u0c3e\u0c32\u0c3e \u0c2c\u0c32\u0c02\u0c17\u0c3e \u0c09\u0c02\u0c26\u0c3f.",
+    "speaker": "Female",
+    "pitch_range": 1.0,
+    "checkpoint_step": 25000,
+    "seconds": 2.496,
+    "wav": "Results/Telugu/test_generated_audios/T2a_Female.wav",
+    "phones": "t aa dR u p ai a t a n i p a tR tR u c aa l aa b a l a ng g aa u n d i",
+    "words_needing_review": []
+  },
+  {
+    "id": "T2b",
+    "text": "\u0c06\u0c2e\u0c46 \u0c2a\u0c1f\u0c4d\u0c1f\u0c41 \u0c1a\u0c40\u0c30\u0c28\u0c41 \u0c27\u0c30\u0c3f\u0c02\u0c1a\u0c3f \u0c35\u0c47\u0c21\u0c41\u0c15\u0c15\u0c41 \u0c35\u0c1a\u0c4d\u0c1a\u0c3f\u0c02\u0c26\u0c3f.",
+    "speaker": "Female",
+    "pitch_range": 1.0,
+    "checkpoint_step": 25000,
+    "seconds": 2.694,
+    "wav": "Results/Telugu/test_generated_audios/T2b_Female.wav",
+    "phones": "aa m e p a tR tR u c ii r a n u dh a r i ny c i v ee dR u k a k u v a c c i n d i",
+    "words_needing_review": []
+  },
+  {
+    "id": "T3",
+    "text": "\u0c2a\u0c41\u0c32\u0c3f \u0c05\u0c21\u0c35\u0c3f\u0c32\u0c4b \u0c28\u0c3f\u0c36\u0c4d\u0c36\u0c2c\u0c4d\u0c26\u0c02\u0c17\u0c3e \u0c28\u0c21\u0c3f\u0c1a\u0c3f\u0c02\u0c26\u0c3f.",
+    "speaker": "Female",
+    "pitch_range": 1.0,
+    "checkpoint_step": 25000,
+    "seconds": 2.194,
+    "wav": "Results/Telugu/test_generated_audios/T3_Female.wav",
+    "phones": "p u l i a dR a v i l oo n i sh sh a b d a ng g aa n a dR i c i n d i",
+    "words_needing_review": []
+  },
+  {
+    "id": "T4",
+    "text": "\u0c08 \u0c38\u0c2e\u0c3e\u0c35\u0c47\u0c36\u0c02 2026 \u0c28\u0c35\u0c02\u0c2c\u0c30\u0c4d 12\u0c35 \u0c24\u0c47\u0c26\u0c40 \u0c09\u0c26\u0c2f\u0c02 10:45 \u0c17\u0c02\u0c1f\u0c32\u0c15\u0c41 \u0c2a\u0c4d\u0c30\u0c3e\u0c30\u0c02\u0c2d\u0c2e\u0c35\u0c41\u0c24\u0c41\u0c02\u0c26\u0c3f, \u0c38\u0c2e\u0c2f\u0c3e\u0c28\u0c3f\u0c15\u0c3f \u0c38\u0c3f\u0c26\u0c4d\u0c27\u0c02\u0c17\u0c3e \u0c09\u0c02\u0c1a\u0c02\u0c21\u0c3f.",
+    "speaker": "Female",
+    "pitch_range": 1.0,
+    "checkpoint_step": 25000,
+    "seconds": 9.021,
+    "wav": "Results/Telugu/test_generated_audios/T4_Female.wav",
+    "phones": "ii s a m aa v ee sh a m r e nR dR u v ee l a i r a v ai aa r u n a v a m b a r p a n n e nR dR a v a t ee d ii u d a y a m p a d i n a l a bh ai ai d u g a nR tR a l a k u p r aa r a m bh a m a v u t u n d i sp s a m a y aa n i k i s i d dh a ng g aa u ny c a nR dR i",
+    "words_needing_review": []
+  }
+]

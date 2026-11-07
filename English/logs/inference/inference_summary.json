@@ -1,0 +1,665 @@
+[
+  {
+    "id": "E1",
+    "text": "The antidisestablishmentarianism movement gained considerable momentum during the parliamentary proceedings.",
+    "speaker": "Male-30-45-Maithili-Bihar-Darbhanga",
+    "pitch_range": 1.3,
+    "checkpoint_step": 20000,
+    "seconds": 5.782,
+    "wav": "Results/English/test_generated_audios/E1_Male-30-45-Maithili-Bihar-Darbhanga.wav",
+    "phones": "DH AH0 AE2 N T IY0 D IH0 S IH0 S T AE2 B L IH0 SH M AH0 N T EH1 R IY0 AH0 N IH2 Z AH0 M M UW1 V M AH0 N T G EY1 N D K AH0 N S IH1 D ER0 AH0 B AH0 L M OW0 M EH1 N T AH0 M D Y UH1 R IH0 NG DH AH0 P AA2 R L AH0 M EH1 N T ER0 IY0 P R AH0 S IY1 D IH0 NG Z",
+    "words_needing_review": [
+      {
+        "word": "the",
+        "pos": "DT",
+        "phones": [
+          "DH",
+          "AH0"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "antidisestablishmentarianism",
+        "pos": "NN",
+        "phones": [
+          "AE2",
+          "N",
+          "T",
+          "IY0",
+          "D",
+          "IH0",
+          "S",
+          "IH0",
+          "S",
+          "T",
+          "AE2",
+          "B",
+          "L",
+          "IH0",
+          "SH",
+          "M",
+          "AH0",
+          "N",
+          "T",
+          "EH1",
+          "R",
+          "IY0",
+          "AH0",
+          "N",
+          "IH2",
+          "Z",
+          "AH0",
+          "M"
+        ],
+        "source": "override"
+      },
+      {
+        "word": "movement",
+        "pos": "NN",
+        "phones": [
+          "M",
+          "UW1",
+          "V",
+          "M",
+          "AH0",
+          "N",
+          "T"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "considerable",
+        "pos": "JJ",
+        "phones": [
+          "K",
+          "AH0",
+          "N",
+          "S",
+          "IH1",
+          "D",
+          "ER0",
+          "AH0",
+          "B",
+          "AH0",
+          "L"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "momentum",
+        "pos": "NN",
+        "phones": [
+          "M",
+          "OW0",
+          "M",
+          "EH1",
+          "N",
+          "T",
+          "AH0",
+          "M"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "during",
+        "pos": "IN",
+        "phones": [
+          "D",
+          "Y",
+          "UH1",
+          "R",
+          "IH0",
+          "NG"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "the",
+        "pos": "DT",
+        "phones": [
+          "DH",
+          "AH0"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "parliamentary",
+        "pos": "JJ",
+        "phones": [
+          "P",
+          "AA2",
+          "R",
+          "L",
+          "AH0",
+          "M",
+          "EH1",
+          "N",
+          "T",
+          "ER0",
+          "IY0"
+        ],
+        "source": "aligned"
+      }
+    ]
+  },
+  {
+    "id": "E2a",
+    "text": "The orchestra's conduct during the ceremony was praised by the audience.",
+    "speaker": "Male-30-45-Maithili-Bihar-Darbhanga",
+    "pitch_range": 1.3,
+    "checkpoint_step": 20000,
+    "seconds": 3.971,
+    "wav": "Results/English/test_generated_audios/E2a_Male-30-45-Maithili-Bihar-Darbhanga.wav",
+    "phones": "DH AH0 AO1 R K AH0 S T R AH0 Z K AA1 N D AH0 K T D Y UH1 R IH0 NG DH AH0 S EH1 R AH0 M OW2 N IY0 W AH1 Z P R EY1 Z D B AY1 DH AH0 AA1 D IY0 AH0 N S",
+    "words_needing_review": [
+      {
+        "word": "the",
+        "pos": "DT",
+        "phones": [
+          "DH",
+          "AH0"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "conduct",
+        "pos": "NN",
+        "phones": [
+          "K",
+          "AA1",
+          "N",
+          "D",
+          "AH0",
+          "K",
+          "T"
+        ],
+        "source": "heteronym"
+      },
+      {
+        "word": "during",
+        "pos": "IN",
+        "phones": [
+          "D",
+          "Y",
+          "UH1",
+          "R",
+          "IH0",
+          "NG"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "the",
+        "pos": "DT",
+        "phones": [
+          "DH",
+          "AH0"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "ceremony",
+        "pos": "NN",
+        "phones": [
+          "S",
+          "EH1",
+          "R",
+          "AH0",
+          "M",
+          "OW2",
+          "N",
+          "IY0"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "was",
+        "pos": "VBD",
+        "phones": [
+          "W",
+          "AH1",
+          "Z"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "by",
+        "pos": "IN",
+        "phones": [
+          "B",
+          "AY1"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "the",
+        "pos": "DT",
+        "phones": [
+          "DH",
+          "AH0"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "audience",
+        "pos": "NN",
+        "phones": [
+          "AA1",
+          "D",
+          "IY0",
+          "AH0",
+          "N",
+          "S"
+        ],
+        "source": "aligned"
+      }
+    ]
+  },
+  {
+    "id": "E2b",
+    "text": "The researchers will conduct an experiment to evaluate the proposed method.",
+    "speaker": "Male-30-45-Maithili-Bihar-Darbhanga",
+    "pitch_range": 1.3,
+    "checkpoint_step": 20000,
+    "seconds": 3.971,
+    "wav": "Results/English/test_generated_audios/E2b_Male-30-45-Maithili-Bihar-Darbhanga.wav",
+    "phones": "DH AH0 R IY1 S ER0 CH ER0 Z W IH1 L K AH0 N D AH1 K T AH0 N IH0 K S P EH1 R AH0 M AH0 N T T UW1 IH0 V AE1 L Y UW0 EY2 T DH AH0 P R AH0 P OW1 Z D M EH1 TH AH0 D",
+    "words_needing_review": [
+      {
+        "word": "the",
+        "pos": "DT",
+        "phones": [
+          "DH",
+          "AH0"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "researchers",
+        "pos": "NNS",
+        "phones": [
+          "R",
+          "IY1",
+          "S",
+          "ER0",
+          "CH",
+          "ER0",
+          "Z"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "will",
+        "pos": "MD",
+        "phones": [
+          "W",
+          "IH1",
+          "L"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "conduct",
+        "pos": "VB",
+        "phones": [
+          "K",
+          "AH0",
+          "N",
+          "D",
+          "AH1",
+          "K",
+          "T"
+        ],
+        "source": "heteronym"
+      },
+      {
+        "word": "an",
+        "pos": "DT",
+        "phones": [
+          "AH0",
+          "N"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "experiment",
+        "pos": "NN",
+        "phones": [
+          "IH0",
+          "K",
+          "S",
+          "P",
+          "EH1",
+          "R",
+          "AH0",
+          "M",
+          "AH0",
+          "N",
+          "T"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "to",
+        "pos": "TO",
+        "phones": [
+          "T",
+          "UW1"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "the",
+        "pos": "DT",
+        "phones": [
+          "DH",
+          "AH0"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "method",
+        "pos": "NN",
+        "phones": [
+          "M",
+          "EH1",
+          "TH",
+          "AH0",
+          "D"
+        ],
+        "source": "aligned"
+      }
+    ]
+  },
+  {
+    "id": "E3",
+    "text": "The rhythm of the orchestra changed unexpectedly.",
+    "speaker": "Male-30-45-Maithili-Bihar-Darbhanga",
+    "pitch_range": 1.3,
+    "checkpoint_step": 20000,
+    "seconds": 2.659,
+    "wav": "Results/English/test_generated_audios/E3_Male-30-45-Maithili-Bihar-Darbhanga.wav",
+    "phones": "DH AH0 R IH1 DH AH0 M AH1 V DH AH0 AO1 R K AH0 S T R AH0 CH EY1 N JH D AH2 N IH0 K S P EH1 K T IH0 D L IY0",
+    "words_needing_review": [
+      {
+        "word": "the",
+        "pos": "DT",
+        "phones": [
+          "DH",
+          "AH0"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "of",
+        "pos": "IN",
+        "phones": [
+          "AH1",
+          "V"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "the",
+        "pos": "DT",
+        "phones": [
+          "DH",
+          "AH0"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "changed",
+        "pos": "VBD",
+        "phones": [
+          "CH",
+          "EY1",
+          "N",
+          "JH",
+          "D"
+        ],
+        "source": "aligned"
+      }
+    ]
+  },
+  {
+    "id": "E4",
+    "text": "The meeting will start at 10:45 AM on 12 November 2026, so andaroo should arrive on time.",
+    "speaker": "Male-30-45-Maithili-Bihar-Darbhanga",
+    "pitch_range": 1.3,
+    "checkpoint_step": 20000,
+    "seconds": 7.465,
+    "wav": "Results/English/test_generated_audios/E4_Male-30-45-Maithili-Bihar-Darbhanga.wav",
+    "phones": "DH AH0 M IY1 T IH0 NG W IH1 L S T AA1 R T AE1 T T EH1 N F AO1 R T IY0 F AY1 V EY1 EH1 M AA1 N T W EH1 L F TH N OW0 V EH1 M B ER0 T W EH1 N T IY0 T W EH1 N T IY0 S IH1 K S sp S OW1 AH1 N D AH0 R UW1 SH UH1 D ER0 AY1 V AA1 N T AY1 M",
+    "words_needing_review": [
+      {
+        "word": "the",
+        "pos": "DT",
+        "phones": [
+          "DH",
+          "AH0"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "meeting",
+        "pos": "NN",
+        "phones": [
+          "M",
+          "IY1",
+          "T",
+          "IH0",
+          "NG"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "will",
+        "pos": "MD",
+        "phones": [
+          "W",
+          "IH1",
+          "L"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "start",
+        "pos": "VB",
+        "phones": [
+          "S",
+          "T",
+          "AA1",
+          "R",
+          "T"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "at",
+        "pos": "IN",
+        "phones": [
+          "AE1",
+          "T"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "ten",
+        "pos": "JJ",
+        "phones": [
+          "T",
+          "EH1",
+          "N"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "forty",
+        "pos": "JJ",
+        "phones": [
+          "F",
+          "AO1",
+          "R",
+          "T",
+          "IY0"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "five",
+        "pos": "CD",
+        "phones": [
+          "F",
+          "AY1",
+          "V"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "ayem",
+        "pos": "NNS",
+        "phones": [
+          "EY1",
+          "EH1",
+          "M"
+        ],
+        "source": "override"
+      },
+      {
+        "word": "on",
+        "pos": "IN",
+        "phones": [
+          "AA1",
+          "N"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "twelfth",
+        "pos": "JJ",
+        "phones": [
+          "T",
+          "W",
+          "EH1",
+          "L",
+          "F",
+          "TH"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "november",
+        "pos": "JJ",
+        "phones": [
+          "N",
+          "OW0",
+          "V",
+          "EH1",
+          "M",
+          "B",
+          "ER0"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "twenty",
+        "pos": "NN",
+        "phones": [
+          "T",
+          "W",
+          "EH1",
+          "N",
+          "T",
+          "IY0"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "twenty",
+        "pos": "NN",
+        "phones": [
+          "T",
+          "W",
+          "EH1",
+          "N",
+          "T",
+          "IY0"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "six",
+        "pos": "CD",
+        "phones": [
+          "S",
+          "IH1",
+          "K",
+          "S"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "so",
+        "pos": "RB",
+        "phones": [
+          "S",
+          "OW1"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "andaroo",
+        "pos": "JJ",
+        "phones": [
+          "AH1",
+          "N",
+          "D",
+          "AH0",
+          "R",
+          "UW1"
+        ],
+        "source": "override"
+      },
+      {
+        "word": "should",
+        "pos": "MD",
+        "phones": [
+          "SH",
+          "UH1",
+          "D"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "arrive",
+        "pos": "VB",
+        "phones": [
+          "ER0",
+          "AY1",
+          "V"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "on",
+        "pos": "IN",
+        "phones": [
+          "AA1",
+          "N"
+        ],
+        "source": "aligned"
+      },
+      {
+        "word": "time",
+        "pos": "NN",
+        "phones": [
+          "T",
+          "AY1",
+          "M"
+        ],
+        "source": "aligned"
+      }
+    ]
+  }
+]

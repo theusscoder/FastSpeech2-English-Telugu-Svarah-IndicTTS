@@ -1,0 +1,103 @@
+# English FastSpeech 2 on AI4Bharat Svarah: configuration of the final model.
+# Data: the cleanest 6 h of 1-20 s Svarah clips (English/select_clean_split.py),
+# split at random into 5 h training and 1 h validation.
+# Conditioning: 109 demographic groups (gender, age group, language, state, district).
+# Groups are a proxy for speakers, NOT verified speaker IDs.
+# Paths are relative to the repository root. English/common.py splits this file
+# into the preprocess/model/train dictionaries the upstream code expects.
+
+preprocess:
+  dataset: "Svarah"
+  path:
+    manifest_dir: "English/data/splits_clean"
+    original_wav_path: "English/data/clean/original_wavs"  # byte-exact 16 kHz source audio
+    raw_path: "English/data/clean/wavs"                    # 22.05 kHz audio + original text
+    mfa_path: "English/data/clean/mfa"
+    # preprocess.py writes features keyed by gender here; make_group_variant.py then
+    # links them under demographic-group names into preprocessed_path.
+    features_path: "English/data/clean/preprocessed"
+    preprocessed_path: "English/data/clean/preprocessed_groups"  # used by training and inference
+    lexicon_path: "lexicon/librispeech-lexicon.txt"
+  preprocessing:
+    val_size: 0  # unused: the split comes from the manifests
+    text:
+      text_cleaners: ["english_cleaners"]
+      language: "en"
+    audio:
+      # HiFi-GAN (hifigan/config.json) needs 22.05 kHz, so 16 kHz audio is resampled.
+      sampling_rate: 22050
+      max_wav_value: 32768.0
+    stft:
+      filter_length: 1024
+      hop_length: 256
+      win_length: 1024
+    mel:
+      n_mel_channels: 80
+      mel_fmin: 0
+      mel_fmax: 8000  # matches HiFi-GAN, and the 8 kHz Nyquist limit of the source
+    pitch:
+      feature: "phoneme_level"
+      normalization: true
+    energy:
+      feature: "phoneme_level"
+      normalization: true
+
+model:
+  transformer:
+    encoder_layer: 4
+    encoder_head: 2
+    encoder_hidden: 256
+    decoder_layer: 6
+    decoder_head: 2
+    decoder_hidden: 256
+    conv_filter_size: 1024
+    conv_kernel_size: [9, 1]
+    encoder_dropout: 0.2
+    decoder_dropout: 0.2
+  variance_predictor:
+    filter_size: 256
+    kernel_size: 3
+    dropout: 0.5
+  variance_embedding:
+    pitch_quantization: "linear"
+    energy_quantization: "linear"
+    n_bins: 256
+  # The upstream speaker embedding holds the demographic groups.
+  multi_speaker: true
+  # Upstream's 1000 frames (11.6 s) would truncate long clips.
+  max_seq_len: 2700
+  vocoder:
+    model: "HiFi-GAN"
+    speaker: "universal"
+
+train:
+  path:
+    ckpt_path: "English/checkpoints"
+    log_path: "English/logs"
+    result_path: "Results/English"
+  optimizer:
+    batch_size: 16
+    max_frames_per_batch: 6000  # limits memory use on a 6 GB GPU
+    betas: [0.9, 0.98]
+    eps: 0.000000001
+    weight_decay: 0.0
+    grad_clip_thresh: 1.0
+    grad_acc_step: 1
+    warm_up_step: 4000
+    anneal_steps: [10000, 14000, 18000]  # upstream: 300k-500k of 900k; scaled to 20k steps
+    anneal_rate: 0.3
+  step:
+    total_step: 20000
+    log_step: 100
+    val_step: 1000
+    save_step: 5000
+  num_workers: 0
+  seed: 42
+
+inference:
+  # Voice: of the 10 groups with the most training clips, the one Whisper understood
+  # best on 30 validation sentences (English/rank_voices.py; logs/evaluation/voice_ranking.csv).
+  default_speaker: "Male-30-45-Maithili-Bihar-Darbhanga"
+  # Predicted pitch is widened x1.3 around each sentence's mean: models trained on
+  # mean-squared error predict over-smoothed, monotonous pitch. Timing is unchanged.
+  pitch_range: 1.3

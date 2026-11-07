@@ -1,0 +1,50 @@
+{
+  "recordings": 8576,
+  "hours": 36.712,
+  "formats": [
+    [
+      "WAV 48000 Hz 1 ch PCM_16",
+      4533
+    ],
+    [
+      "WAV 16000 Hz 1 ch PCM_16",
+      4043
+    ]
+  ],
+  "by_gender": {
+    "Female": {
+      "recordings": 4043,
+      "hours": 23.921
+    },
+    "Male": {
+      "recordings": 4533,
+      "hours": 12.791
+    }
+  },
+  "duration_percentiles_s": {
+    "min": 0.66,
+    "p5": 3.46,
+    "p50": 10.97,
+    "p95": 39.99,
+    "p99": 60.4,
+    "max": 151.63
+  },
+  "hours_by_length": {
+    "0-1s": 0.003,
+    "1-5s": 1.154,
+    "5-10s": 5.694,
+    "10-15s": 5.028,
+    "15-20s": 4.761,
+    "20-30s": 8.316,
+    "30-60s": 9.989,
+    "60-10000s": 1.768
+  },
+  "problems": [
+    [
+      "latin_text",
+      43
+    ]
+  ],
+  "with_digits": 0,
+  "duplicate_transcripts": 113
+}

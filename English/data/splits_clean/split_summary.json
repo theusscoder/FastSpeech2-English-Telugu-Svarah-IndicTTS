@@ -1,0 +1,38 @@
+{
+  "dataset": "ai4bharat/Svarah",
+  "random_seed": 42,
+  "method": "Highest speech-to-silence energy on aligned audio, then a random recording-level split",
+  "speaker_exclusive": false,
+  "length_limits_seconds": [
+    1.0,
+    20.0
+  ],
+  "aligned_candidates": 5138,
+  "candidates_aligned_snr_db_median": 20.1,
+  "candidates_share_under_20_db": 0.496,
+  "lowest_aligned_snr_kept_db": 13.88,
+  "training": {
+    "recordings": 3162,
+    "hours": 4.9995,
+    "gender": {
+      "Female": 1663,
+      "Male": 1499
+    },
+    "demographic_groups": 109,
+    "aligned_snr_db_median": 23.2,
+    "share_under_20_db": 0.316
+  },
+  "validation": {
+    "recordings": 659,
+    "hours": 1.0012,
+    "gender": {
+      "Male": 324,
+      "Female": 335
+    },
+    "demographic_groups": 105,
+    "aligned_snr_db_median": 22.9,
+    "share_under_20_db": 0.349
+  },
+  "overlap_with_original_split": 2369,
+  "overlap_check": "Passed"
+}

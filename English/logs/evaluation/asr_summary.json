@@ -1,0 +1,55 @@
+{
+  "asr": "OpenAI Whisper small, language en, beam 5, temperature 0",
+  "checkpoint": "English/checkpoints/model_only_20000.pth.tar",
+  "pitch_range": 1.3,
+  "test_sentences": {
+    "overall": {
+      "wer": 0.1724,
+      "cer": 0.0627,
+      "clips": 5,
+      "reference_words": 58
+    },
+    "per_sentence": {
+      "E1": {
+        "wer": 0.5,
+        "cer": 0.133,
+        "transcript": "the anti-dissist-arist mentalism movement in considerable momentum during the parliamentary proceedings."
+      },
+      "E2a": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "transcript": "The orchestra's conduct during the ceremony was praised by the audience."
+      },
+      "E2b": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "transcript": "The researchers will conduct an experiment to evaluate the proposed method."
+      },
+      "E3": {
+        "wer": 0.0,
+        "cer": 0.0,
+        "transcript": "The rhythm of the orchestra changed unexpectedly."
+      },
+      "E4": {
+        "wer": 0.278,
+        "cer": 0.114,
+        "transcript": "The meeting will start at time 45 a.m. on 12th November, 2026. So, Anjaro should arrive on time."
+      }
+    }
+  },
+  "validation_sample": {
+    "seed": 42,
+    "real_recordings": {
+      "wer": 0.0716,
+      "cer": 0.0274,
+      "clips": 100,
+      "reference_words": 1201
+    },
+    "synthesized": {
+      "wer": 0.2032,
+      "cer": 0.099,
+      "clips": 100,
+      "reference_words": 1201
+    }
+  }
+}

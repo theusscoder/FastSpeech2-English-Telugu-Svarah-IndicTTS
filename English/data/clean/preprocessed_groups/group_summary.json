@@ -1,0 +1,14 @@
+{
+  "groups": 109,
+  "train_utterances_per_group": {
+    "min": 2,
+    "median": 21,
+    "max": 107
+  },
+  "validation_groups_unseen_in_training": [],
+  "validation_utterances_in_unseen_groups": 0,
+  "largest_female_group": [
+    "Female-30-45-Kashmiri-Jammu-Kashmir-Srinagar",
+    107
+  ]
+}

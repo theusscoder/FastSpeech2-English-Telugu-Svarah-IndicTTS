@@ -1,0 +1,20 @@
+{
+    "dataset": "ai4bharat/Svarah",
+    "random_seed": 42,
+    "split_method": "Random recording-level split",
+    "speaker_exclusive": false,
+    "total_recordings": 6656,
+    "training": {
+        "recordings": 3451,
+        "hours": 4.9997
+    },
+    "validation": {
+        "recordings": 690,
+        "hours": 0.9998
+    },
+    "unused": {
+        "recordings": 2515,
+        "hours": 3.6149
+    },
+    "overlap_check": "Passed"
+}

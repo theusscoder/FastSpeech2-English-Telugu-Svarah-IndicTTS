@@ -1,0 +1,182 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# pyenv
+.python-version
+
+# celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+
+__pycache__
+.vscode
+.DS_Store
+
+# MFA
+montreal-forced-aligner/
+
+# data, checkpoint, and models
+raw_data/
+output/
+*.npy
+TextGrid/
+hifigan/*.pth.tar
+
+# English experiment: regenerable data and intermediate files
+English/data/original_wavs/
+English/data/wavs/
+English/data/preprocessed/mel/
+English/data/preprocessed/pitch/
+English/data/preprocessed/energy/
+English/data/preprocessed/duration/
+English/data/mfa/subset_corpus_*/
+English/data/mfa/textgrids*/
+English/checkpoints/smoke_test/
+English/logs/smoke_test/
+English/logs/train/
+English/logs/val/
+
+# Telugu experiment: regenerable data and intermediate files
+Telugu/data/original_wavs/
+Telugu/data/wavs/
+Telugu/data/all_recordings.csv
+Telugu/data/preprocessed/mel/
+Telugu/data/preprocessed/pitch/
+Telugu/data/preprocessed/energy/
+Telugu/data/preprocessed/duration/
+Telugu/data/mfa/textgrids*/
+Telugu/checkpoints/smoke_test/
+Telugu/logs/smoke_test/
+Telugu/logs/train/
+Telugu/logs/val/
+English/data/preprocessed_groups/mel/
+English/data/preprocessed_groups/pitch/
+English/data/preprocessed_groups/energy/
+English/data/preprocessed_groups/duration/
+English/checkpoints_groups/smoke_test/
+English/logs_groups/smoke_test/
+English/logs_groups/train/
+English/logs_groups/val/
+
+# Checkpoints: only the two final weight-only files are published (Git LFS)
+English/checkpoints*/*.pth.tar
+Telugu/checkpoints/*.pth.tar
+!English/checkpoints/model_only_20000.pth.tar
+!Telugu/checkpoints/model_only_25000.pth.tar
+English/checkpoints*/smoke_test/
+
+# English cleaner selection (third run): regenerable data
+English/data/clean/original_wavs/
+English/data/clean/wavs/
+English/data/clean/mfa/textgrids*/
+English/data/clean/mfa/subset_corpus_*/
+English/data/clean/preprocessed*/mel/
+English/data/clean/preprocessed*/pitch/
+English/data/clean/preprocessed*/energy/
+English/data/clean/preprocessed*/duration/
+English/logs_clean/train/
+English/logs_clean/val/
+English/logs_clean/smoke_test/
+English/checkpoints_run1_gender/smoke_test/
+
+# Not part of the submission: earlier runs, drafts and analysis (move it out before publishing)
+Extras_not_for_submission/
+English/logs/inference/*
+!English/logs/inference/inference_summary.json
+Telugu/logs/inference/*
+!Telugu/logs/inference/inference_summary.json

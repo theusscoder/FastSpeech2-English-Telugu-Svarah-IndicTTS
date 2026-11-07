@@ -1,0 +1,93 @@
+# Telugu FastSpeech 2 experiment on IndicTTS Telugu (SPRINGLab/IndicTTS_Telugu).
+# Paths are relative to the repository root.
+
+preprocess:
+  dataset: "IndicTTS_Telugu"
+  path:
+    manifest_dir: "Telugu/data/splits"
+    original_wav_path: "Telugu/data/original_wavs"  # byte-exact 16 kHz source audio
+    raw_path: "Telugu/data/wavs"                    # 22.05 kHz audio + original text
+    mfa_path: "Telugu/data/mfa"
+    preprocessed_path: "Telugu/data/preprocessed"
+  selection:
+    voice: "Female"
+    seed: 42
+    train_hours: 5.0
+    val_hours: 1.0
+    min_seconds: 1.0
+    max_seconds: 20.0
+  preprocessing:
+    val_size: 0  # unused: the split comes from the manifests
+    text:
+      text_cleaners: []  # phones are written directly in {braces}
+      language: "te"
+    audio:
+      sampling_rate: 22050  # matches HiFi-GAN
+      max_wav_value: 32768.0
+    stft:
+      filter_length: 1024
+      hop_length: 256
+      win_length: 1024
+    mel:
+      n_mel_channels: 80
+      mel_fmin: 0
+      mel_fmax: 8000
+    pitch:
+      feature: "phoneme_level"
+      normalization: true
+    energy:
+      feature: "phoneme_level"
+      normalization: true
+
+model:
+  transformer:
+    encoder_layer: 4
+    encoder_head: 2
+    encoder_hidden: 256
+    decoder_layer: 6
+    decoder_head: 2
+    decoder_hidden: 256
+    conv_filter_size: 1024
+    conv_kernel_size: [9, 1]
+    encoder_dropout: 0.2
+    decoder_dropout: 0.2
+  variance_predictor:
+    filter_size: 256
+    kernel_size: 3
+    dropout: 0.5
+  variance_embedding:
+    pitch_quantization: "linear"
+    energy_quantization: "linear"
+    n_bins: 256
+  multi_speaker: false  # the selected data is one gender class of the dataset
+  max_seq_len: 2000     # 20 s selection limit is about 1723 frames
+  vocoder:
+    model: "HiFi-GAN"
+    speaker: "universal"
+
+train:
+  path:
+    ckpt_path: "Telugu/checkpoints"
+    log_path: "Telugu/logs"
+    result_path: "Results/Telugu"
+  optimizer:
+    batch_size: 16
+    max_frames_per_batch: 6000
+    betas: [0.9, 0.98]
+    eps: 0.000000001
+    weight_decay: 0.0
+    grad_clip_thresh: 1.0
+    grad_acc_step: 1
+    warm_up_step: 4000
+    anneal_steps: [25000, 35000, 45000]
+    anneal_rate: 0.3
+  step:
+    total_step: 50000
+    log_step: 100
+    val_step: 1000
+    save_step: 2500
+  num_workers: 0
+  seed: 42
+
+inference:
+  default_speaker: "Female"

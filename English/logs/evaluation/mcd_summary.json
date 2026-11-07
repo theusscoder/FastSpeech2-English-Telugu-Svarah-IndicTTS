@@ -1,0 +1,22 @@
+{
+  "checkpoint": "English/checkpoints/model_only_20000.pth.tar",
+  "step": 20000,
+  "pitch_range": 1.3,
+  "validation_clips": 659,
+  "mcd_db_vocoder_only": {
+    "mean": 10.14,
+    "std": 2.408,
+    "median": 9.766
+  },
+  "mcd_db_full_system": {
+    "mean": 11.661,
+    "std": 1.926,
+    "median": 11.362
+  },
+  "synthesized_to_recording_length_ratio": {
+    "median": 0.937,
+    "p10": 0.752,
+    "p90": 1.09
+  },
+  "method": "WORLD (DIO, StoneMask, CheapTrick), 25 coded mel-cepstra without c0, DTW, MCD = 10/ln10 * sqrt(2) * mean Euclidean distance"
+}

@@ -1,0 +1,21 @@
+{
+  "checkpoint": "Telugu/checkpoints/25000.pth.tar",
+  "step": 25000,
+  "validation_clips": 289,
+  "mcd_db_vocoder_only": {
+    "mean": 6.864,
+    "std": 0.234,
+    "median": 6.813
+  },
+  "mcd_db_full_system": {
+    "mean": 8.288,
+    "std": 0.479,
+    "median": 8.208
+  },
+  "synthesized_to_recording_length_ratio": {
+    "median": 0.984,
+    "p10": 0.926,
+    "p90": 1.035
+  },
+  "method": "WORLD (DIO, StoneMask, CheapTrick), 25 coded mel-cepstra without c0, DTW, MCD = 10/ln10 * sqrt(2) * mean Euclidean distance"
+}

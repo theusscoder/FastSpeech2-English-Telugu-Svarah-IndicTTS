@@ -1,0 +1,11 @@
+voice,training_clips,wer
+Male-30-45-Maithili-Bihar-Darbhanga,74,0.0987
+Male-18-30-Odia-Odisha-Sundergarh,86,0.104
+Female-30-45-Nepali-West-Bengal-Kalimpong,96,0.1093
+Female-18-30-Malayalam-Kerala-Pathanamthitta,92,0.1147
+Female-18-30-Nepali-West-Bengal-Darjeeling,60,0.1253
+Female-45-60-Urdu-Maharashtra-Satara,65,0.128
+Male-30-45-Urdu-Gujarat-Ahmedabad,106,0.1307
+Female-30-45-Kashmiri-Jammu-Kashmir-Srinagar,107,0.1387
+Female-18-30-Bodo-Assam-Kokrajhar,71,0.1707
+Male-18-30-Nepali-West-Bengal-Kalimpong,76,0.1947

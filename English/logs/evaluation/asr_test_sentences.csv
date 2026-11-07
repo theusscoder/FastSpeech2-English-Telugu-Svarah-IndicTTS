@@ -1,0 +1,6 @@
+id,reference,transcript,word_errors,words,char_errors,chars
+E1,The antidisestablishmentarianism movement gained considerable momentum during the parliamentary proceedings.,the anti-dissist-arist mentalism movement in considerable momentum during the parliamentary proceedings.,5,10,13,98
+E2a,The orchestra's conduct during the ceremony was praised by the audience.,The orchestra's conduct during the ceremony was praised by the audience.,0,12,0,61
+E2b,The researchers will conduct an experiment to evaluate the proposed method.,The researchers will conduct an experiment to evaluate the proposed method.,0,11,0,64
+E3,The rhythm of the orchestra changed unexpectedly.,The rhythm of the orchestra changed unexpectedly.,0,7,0,42
+E4,"The meeting will start at 10:45 AM on 12 November 2026, so andaroo should arrive on time.","The meeting will start at time 45 a.m. on 12th November, 2026. So, Anjaro should arrive on time.",5,18,8,70

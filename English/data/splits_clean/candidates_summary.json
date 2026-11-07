@@ -1,0 +1,8 @@
+{
+  "candidates": 5160,
+  "hours": 8.464,
+  "excluded": {
+    "outside_length_limits": 1325,
+    "duplicate_transcript": 171
+  }
+}

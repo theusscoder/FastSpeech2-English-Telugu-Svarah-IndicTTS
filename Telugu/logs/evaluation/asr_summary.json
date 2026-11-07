@@ -1,0 +1,54 @@
+{
+  "asr": "OpenAI Whisper small, language te, beam 5, temperature 0",
+  "checkpoint": "Telugu/checkpoints/25000.pth.tar",
+  "test_sentences": {
+    "overall": {
+      "wer": 1.2222,
+      "cer": 1.1354,
+      "clips": 5,
+      "reference_words": 36
+    },
+    "per_sentence": {
+      "T1": {
+        "wer": 1.5,
+        "cer": 1.0,
+        "transcript": "निवूरो भार्म कोलाजि कल्परि सोदनलों तनवूशदाल प्रभावान नी विसलेषिचारू"
+      },
+      "T2a": {
+        "wer": 1.0,
+        "cer": 1.0,
+        "transcript": "ताड पयतनी पत्तू चाला बलंगा हूंदी"
+      },
+      "T2b": {
+        "wer": 1.0,
+        "cer": 1.765,
+        "transcript": "आमे पट्ट्ट्ट्ट्ट्ट्ट्ट्ट्ट्ट्ट्ट्ट्ट्ट्ट्ट्ट्ट्ट्ट्ट्ट्ट्ट्टि"
+      },
+      "T3": {
+        "wer": 1.25,
+        "cer": 1.0,
+        "transcript": "पूलि अदविलो निस सब्दंगा नदिचिन्दि"
+      },
+      "T4": {
+        "wer": 1.286,
+        "cer": 1.066,
+        "transcript": "इसमा वेसम 2026 नवम बर्पन नदवत एदी उदयम पदिनलब है एदु गंतलक। प्रारम्भम हो तुंदी, समयानी की सिद्धंगा उंचंदी"
+      }
+    }
+  },
+  "validation_sample": {
+    "seed": 42,
+    "real_recordings": {
+      "wer": 1.1368,
+      "cer": 1.0204,
+      "clips": 100,
+      "reference_words": 1469
+    },
+    "synthesized": {
+      "wer": 1.1763,
+      "cer": 1.0363,
+      "clips": 100,
+      "reference_words": 1469
+    }
+  }
+}

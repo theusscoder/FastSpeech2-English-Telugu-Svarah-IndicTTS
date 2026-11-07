@@ -1,0 +1,29 @@
+{
+  "dataset": "SPRINGLab/IndicTTS_Telugu",
+  "random_seed": 42,
+  "split_method": "Random recording-level split within one gender class",
+  "voice": "Female",
+  "length_limits_seconds": [
+    1.0,
+    20.0
+  ],
+  "total_recordings": 8576,
+  "excluded_before_sampling": {
+    "outside_length_limits": 1821,
+    "duplicate_transcript": 15,
+    "other_voice": 4533
+  },
+  "training": {
+    "recordings": 1576,
+    "hours": 5.0044
+  },
+  "validation": {
+    "recordings": 297,
+    "hours": 1.0018
+  },
+  "unused_eligible": {
+    "recordings": 334,
+    "hours": 1.0769
+  },
+  "overlap_check": "Passed"
+}
